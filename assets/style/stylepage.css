@@ -1,0 +1,20 @@
+
+body {
+    margin: 0px;
+    font-family: Arial, Tahoma;
+}
+
+.header {
+    background-color:antiquewhite;
+}
+
+#hejrj {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#heading {
+    font-size: 30px;
+    color:rgb(36, 36, 72);
+}
