@@ -1,0 +1,141 @@
+<!-- THIS IS THE HOME PAGE -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage - KKKT Kisasa</title>
+
+  <!-- CSS Link Tag -->
+  <link rel="stylesheet" href="css/a2.css">
+  <link rel="stylesheet" href="css/a3.css">
+ </head>
+
+ <body>
+  <!-- Top bar for simple notification -->
+   <!-- Not putting it now -->
+  <div></div>
+
+  <!-- Header tag -->
+  <div class="header-pg">
+     <!-- Sidebar Toggle -->
+     <div class="nav-toggle" onclick="toggleNav()">☰</div>
+     <div id="mySidebar" class="sidebar">
+       <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+       <a href="index.html">Home</a>
+       <a href="#">Wachungaji</a>
+       <a href="#">Utangulizi</a>
+       <a href="#">Mawasiliano</a>
+       <hr>
+       <a href="login_pg.html">Login/Sign Up</a>
+     </div>
+
+    <!-- Body in header -->
+    <div class="body-header">
+       <!-- image div -->
+       <div class="logo-box">
+        <img src="logo/kkkt_3.png" alt="KKKT Logo">
+       </div>
+
+       <!-- Title -->
+       <div class="titleheader-box">
+        <span id="titleheader">KANISA LA KIINILI LA KILUTHERI TANZANA (KKKT)</span>
+        <span id="titleheader2">USHARIKA WA KISASA</span>
+       </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleNav() {
+      const sidebar = document.getElementById("mySidebar");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+  </script>
+
+     <!-- Section 1 -->
+   <!-- Profile ya Mchungaji Kiongozi -->
+   <div class="section-container">
+      <div class="hover-image-container">
+          <div class="bg-box"></div>
+          <img src="photo/IMG_8943.jpg" class="zoom-image" alt="Profile">
+      </div>
+      <div class="rect-box">
+          <p>Mchungaji Kiongozi  wa KKKT Usharika wa Kisasa, Mchungaji Humaphrey Sam. Anawakaribishwa washarika 
+            wote katika Ibada zinazofanyika hapa KKKT Kisasa. Kanisamlinapatikana Kisasa, Dodoma.
+          </p>
+      </div>
+   </div> 
+
+  <!-- Section 2 -->
+  <!-- Profile ya Mchungaji Msaidizi -->
+     <div class="section-container">
+      <div class="hover-image-container">
+          <div class="bg-box"></div>
+          <img src="photo/MM.jpg" class="zoom-image" alt="Profile">
+      </div>
+      <div class="rect-box">
+          <p>Mchungaji Kiongozi  wa KKKT Usharika wa Kisasa, Mchungaji Humaphrey Sam. Anawakaribishwa washarika 
+            wote katika Ibada zinazofanyika hapa KKKT Kisasa. Kanisamlinapatikana Kisasa, Dodoma.
+          </p>
+      </div>
+   </div>
+  
+   <!-- Section 3 -->
+   <!-- Picha za usharika -->
+   <div class="slideshow-wrapper">
+      <div class="slideshow-container">
+         <div class="slide slide1"></div>
+         <div class="slide slide2"></div>
+         <div class="slide slide3"></div>
+         <div class="slide slide4"></div>
+         <div class="slide slide1"></div>
+         <div class="slide slide2"></div>
+         <div class="slide slide3"></div>
+         <div class="slide slide4"></div>
+      </div>
+   </div>
+  
+   <!-- Section 4 -->
+   <!-- Taarifa fupi kuhusu Usharika -->
+   <div>
+    <p>jnnjnjdnjcndjcndjcndj</p>
+   </div>
+
+
+     <!-- Footer -->
+   <footer class="footer-pg">
+      <div class="footer-content">
+          <div class="footer-section contact">
+              <h3>Contact Us</h3>
+              <p>Email: <a href="mailto:lutherankisasa@gmail.com">lutherankisasa@gmail.com</a></p>
+              <p>Phone: +255 621 004 350 | +255 788 736 848 | +255 718 153 221</p>
+              <p><a href="https://maps.app.goo.gl/VNTK6XspYJGEGY7z6" target="_blank">View on Google Maps</a></p>
+          </div>
+          <div class="footer-section links">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Help Desk</a></li>
+                  <li><a href="#">Namba za Sadaka</a></li>
+                  <li><a href="maoni.html">Maoni Page</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social">
+              <h3>Follow Us</h3>
+              <p>Connect with us on our social platforms for updates.</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          &copy; 2026 KKKT Kisasa. All rights reserved.
+      </div>
+   </footer> 
+
+ </body>
+
+ </html>
+
+

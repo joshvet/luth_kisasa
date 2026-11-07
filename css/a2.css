@@ -1,0 +1,257 @@
+
+/* CSS variables for colors */
+:root {
+    --bg-boxi: #FFFFFF;      /* 60% - Main background */
+    --bg-boxii: #1111aa;
+    --color-primary: #000080;   /* 30% - Primary brand blue */
+    --txtcolor-i: #3b3b3b;       /* 10% - Secondary text/black */
+    --txtcolor-ii: #000000;     /* Pure black */
+    --txtcolor-iii: #FFFFFF; 
+}
+
+body {
+    background-color: var(--bg-boxi);
+    color: var(--text-dark);
+    margin: 0px;
+    font-family: Outfit;
+    /* padding:0px 20px 0px 20px; */
+}
+
+header {
+    display: block;
+}
+
+.header-pg {
+    background: linear-gradient(135deg, var(--bg-boxii), var(--color-primary));
+    height: 200px;
+}
+
+.body-header {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  padding: 20px;
+}
+
+.logo-box {
+  padding-right: 20px;
+}
+
+.logo-box img {
+  height: 150px; /* Adjusted to fit nicely within the 200px header */
+  width: auto;
+}
+
+.titleheader-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#titleheader {
+  color: var(--txtcolor-iii);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif; /* Premium serif font */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#titleheader2 {
+  color: var(--txtcolor-iii);
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+
+.section-container {
+    display: flex;
+    padding: 20px;
+    gap: 40px; /* Increased spacing between boxes */
+}
+
+.square-box {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 30px; /* Increased for modern look */
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.square-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section 2 Image Hover Effects */
+.hover-image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+.zoom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 0.4s ease;
+    transform: rotate(-5deg); /* Sitting aside when not hovered */
+}
+
+.bg-box {
+    width: 100%;
+    height: 100%;
+    background-color: #aaa;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+.hover-image-container:hover .zoom-image {
+    transform: scale(1.1) rotate(0deg); /* Zoom and sit upright */
+}
+
+.hover-image-container:hover .bg-box {
+    transform: translate(-10px, -10px); /* Hide behind or align box */
+}
+
+/* Section 3 Slideshow */
+.slideshow-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.slideshow-container {
+    display: flex;
+    width: max-content; /* Ensure container fits the content width */
+    animation: slide 15s linear infinite;
+}
+
+.slide {
+    width: 300px;
+    height: 200px;
+    margin: 0 20px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.slide1 { background-color: #1111aa; }
+.slide2 { background-color: #000080; }
+.slide3 { background-color: #3b3b3b; }
+.slide4 { background-color: #008080; }
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1360px); } /* Adjust based on 4 slides * 340px */
+}
+
+/* Footer Styles */
+.footer-pg {
+    background-color: #000040;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0; /* Changed from left to right */
+    background-color: #000040;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ffd700;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px; /* Adjusted close button to left side */
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+.nav-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Changed from left to right */
+    z-index: 1001;
+}

@@ -1,0 +1,37 @@
+DOCUMENTATION ON THE PROJECT.
+
+> INFORMATION ON THE WEBSITE.
+- The website has two side
+  1] The Client side
+  2] The Admin side (Dashboard)
+
+> The technologies the website uses.
+  1] For Database (Postgres Database service will be provide my Superbase)
+  2] For Hosting (This early days we will use firebase free hsotinng service)
+
+> BRANDING IN THE WEBSITE.
+  1] Fonts
+     For heading use Sansation (available in Google fonts)
+     For paragraphs use Open Sans (available in Google fonts)
+  
+  2] Color Palette
+     * Must use 60.30.10 rule
+     White  #FFFFFF  : used 60% of the website
+     Blue #000080    : used 30% of the websites
+     Blue color family enters in the 30% of the website
+     Black (Pure Black & #3b3b3b) : used 10% of the website
+
+  3] Transparent Rectangle - with 15px round corners
+     
+
+
+> DEVELOPERS BEHIND IT
+- Joshua   email : joshuakimbisa@gmail.com
+
+
+> PROJECT DEVELOPING
+   1] SMS service i might use NextSMS, SwalaSMS, Beem Africa, Rodsms
+   2] SMTP provider for sending notifications via email. (send fast)
+   3] Payment provider [Sadaka]
+
+> BUDGET ALL THE PROJECT
